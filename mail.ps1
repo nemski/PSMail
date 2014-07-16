@@ -28,7 +28,7 @@ param([string]$MailServer, [int]$MailPort, [string]$EmailFrom, [string]$EmailTo,
 	Text to email 
 	
 .EXAMPLE
-	&"mail.ps1 mailhost.syd.insite.ddau no-reply@prognosis.gsoa.didata.com.au patrick.robinson@dimensiondata.com 'test' '123'".
+	&"mail.ps1 mail.example.com no-reply@example.com nemski@example.com 'test' '123'".
 #>
 
 $SMTPClient = New-Object Net.Mail.SmtpClient($MailServer, $MailPort)
